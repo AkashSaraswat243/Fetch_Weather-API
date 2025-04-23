@@ -10,6 +10,7 @@ async function getWeather() {
     const apiKey = "c51d26aa60f745909e6140444252204";
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`;
 
+
     try {
         const response = await fetch(url);
         if (!response.ok) throw new Error("City not found");
